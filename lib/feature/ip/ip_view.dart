@@ -58,7 +58,7 @@ class IPViewState extends State<IPViewImpl> implements IPView {
   }
 
   @override
-  void updateIAddress(String ipAddress) {
+  void updateIPAddress(String ipAddress) {
     setState(() {
       _ipAddress = ipAddress;
     });

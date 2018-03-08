@@ -14,7 +14,7 @@ class IPPresenterImpl implements IPPresenter {
   @override
   void getIPAddress() {
     _ipRepository.getIp().then((String ip) {
-      view.updateIAddress(ip);
+      view.updateIPAddress(ip);
     });
   }
 

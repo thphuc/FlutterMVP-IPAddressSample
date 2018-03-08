@@ -9,5 +9,5 @@ abstract class IPPresenter extends BasePresenter<IPViewState> {
 }
 
 abstract class IPView extends BaseView {
-  void updateIAddress(String ipAddress);
+  void updateIPAddress(String ipAddress);
 }
