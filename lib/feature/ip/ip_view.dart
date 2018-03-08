@@ -10,14 +10,14 @@ class IPViewImpl extends StatefulWidget {
   final String title;
 
   @override
-  _IPViewState createState() => new _IPViewState();
+  IPViewState createState() => new IPViewState();
 }
 
-class _IPViewState extends State<IPViewImpl> implements IPView {
+class IPViewState extends State<IPViewImpl> implements IPView {
   String _ipAddress = "0.0.0.0";
   IPPresenterImpl _ipPresenter;
 
-  _IPViewState() {
+  IPViewState() {
     _ipPresenter = new IPPresenterImpl(this, new IPRepositoryImpl());
     _ipPresenter.getIPAddress();
   }
